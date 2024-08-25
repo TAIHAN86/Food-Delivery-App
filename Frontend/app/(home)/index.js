@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import {Redirect} from "expo-routerw"
 
 const index = () => {
   return (
-    
-     <Redirect href="/(home)"/>
-    
+    <View>
+      <Text>home screen</Text>
+      <Text>home screen</Text>
+    </View>
   )
 }
 
