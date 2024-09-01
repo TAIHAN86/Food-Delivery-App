@@ -4,6 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import * as Location from 'expo-location'
 import { Octicons, Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import Carousel from "./../../components/Carousel";
+import Categories from "./../../components/Categories";
 
 const HomeScreen = () => {
   const [displayCurrentAddress, setDisplayCurrentAddress] = useState('Location Loading.....');
@@ -115,6 +117,9 @@ const HomeScreen = () => {
         <TextInput placeholder="Search for food, hotels" />
         <AntDesign name="search1" size={24} color="#E52B50" />
       </View>
+      <Carousel/>
+
+<Categories />
 
     </ScrollView>
   )
